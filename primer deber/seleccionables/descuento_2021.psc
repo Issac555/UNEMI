@@ -1,3 +1,14 @@
+// Inicio del algoritmo
+// Definir las variables necesarias:
+// - precio_nuevo: el valor del vehículo
+// - quitar: el monto de descuento si aplica
+// - fecha: el año de fabricación del vehículo
+
+// Pedir al usuario que ingrese el valor del vehículo (debe ser mayor a $900)
+// Leer el valor ingresado y guardarlo en la variable precio_nuevo
+
+// Si el valor del vehículo es menor o igual a $
+
 Algoritmo sin_titulo
 	Definir precio_nuevo, fecha, quitar Como Real
 	Escribir "Ingresa el valor del vehículo que deseas vender, mayor de 900$"

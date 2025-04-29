@@ -1,3 +1,7 @@
+// Definir la variable edad como un entero
+// Solicitar al usuario ingresar su edad actual
+// Mostrar la edad actual y la edad que tendrá dentro de 10 años
+
 Algoritmo edadd
 	Definir edad Como Entero
 	Escribir "Ingresa tu edad actual"

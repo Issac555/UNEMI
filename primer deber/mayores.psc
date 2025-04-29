@@ -1,3 +1,8 @@
+// Definir las variables n1 y n2 como enteros
+// Solicitar al usuario ingresar dos números para la comparación
+// Comparar si el primer número es mayor o igual que el segundo
+// Mostrar el resultado de la comparación, indicando cuál es el mayor
+
 Algoritmo sin_titulo
 	Definir n1, n2 Como Entero
 	Escribir "Ingresa tu primer digito para la comparación"

@@ -1,3 +1,9 @@
+// Definir variable n1 como carácter
+// Leer el carácter ingresado por el usuario
+// Verificar si el carácter es una vocal
+// Si es vocal, mostrar mensaje que es una vocal
+// Si no es vocal, mostrar mensaje que no es una vocal
+
 Algoritmo negativo_positivo
 	Definir n1 Como Caracter
 	Escribir "Ingresa un caracter"

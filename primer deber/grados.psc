@@ -1,3 +1,9 @@
+
+// Definir las variables para Celsius y Fahrenheit
+// Pedir al usuario los grados Celsius
+// Aplicar la fórmula de conversión (Celsius * 9/5) + 32 = Fahrenheit
+// Mostrar el resultado de la conversión
+
 Algoritmo sin_titulo
 Definir cel, faret Como Real
 Escribir "Ingresa los grados Celcius que quieres convertir a grados Fahrenheit"
