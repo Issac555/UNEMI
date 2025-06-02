@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+     <h1>PLATAFORMA DE STREAMING DE MÚSICA - POOX </h1>
+     <P>Actualmente, todos los usuarios obtienen un descuento del 0% en la compra de canciones.</P>
+     <p> La política de ajuste de descuentos es la siguiente:</p>
+     
+     <main class="container">
+          <ol>
+               <li>Si un usuario es suscriptor premium y menor de edad, se aplicará un aumento del 15% al descuento actual. </li>
+               <li> Si el usuario es suscriptor regular o es mayor de edad se aplicará un aumento del 10% al descuento actual.</li>
+               <li>Para los usuarios que no son suscriptores, no habrá aumento en el descuento.               </li>
+          </ol>
+
+          <div id="edad-box">
+               <label for="edad-label">Ingresa tu edad actual</label>
+               <input type="number" id="edad" name="edad" placeholder="18" required>
+          </div>
+          <br>
+          <div id="compra-box">
+               <label for="compra-label">Ingresa el valor de tu compra</label>
+               <input type="number" id="compra" name="compra" placeholder="100.000$" required>
+          </div>
+          <br>
+          <section id="section-label">
+               <label for="tipo-label">Ingresa según tu membresia</label>
+               <select id="usuario" name="usuario">
+                    <option value = "regular">Selecciona</option>
+                    <option value="regular">USUARIO REGULAR</option>
+                    <option value="nuevo">USUARIO NUEVO</option>
+                    <option value="premium">USUARIO PREMIUM</option>
+               </select>
+          </section>
+
+          <br>
+          <button type="button" id="ingreso">Calcular</button>
+          <div id="resultado" class="card"></div>
+
+     </main>
+     <script src="js/script.js"></script>
+</body>
+</html>

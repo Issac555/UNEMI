@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
                textoColor(`El valor del descuento es de ${valordescuento}$`, "green") +
                textoColor(`El valor del IVA es de ${valoriva}$`, "red") +
                textoColor(`El valor total es de ${valortotal}$`, "blue") +
-               textoColor(`Tu tipo de discapacidad es: ${tipo}`, "black");
+               textoColor(`Tu tipo de discapacidad es: Otro`, "black");
           }
      });
 });
