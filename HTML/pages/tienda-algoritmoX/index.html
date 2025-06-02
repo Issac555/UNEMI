@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/index.css">
+     <title>Tienda-AlgoritmoX</title>
+
+</head>
+<body>
+     
+     <h1>BIENVENIDO A LA MEJOR TIENDA ONLINE - ALGORITMOX</h1>
+     <main class="container">
+
+          <section id="valor-compra">
+               <p> El descuento actual para todos los clientes es de 10%.</p>
+               <p>La política de ajuste de límites de descuento es la siguiente:</p>
+               <ol>
+                    <li>Si un cliente pertenece al tipo A o es discapacitado, el aumento en el límite de descuento será un 20% sumado al valor que tiene.</li>
+                    <li>Si pertenece al tipo B y no es discapacitado, el aumento será un 15% sumado al valor que tiene.</li>
+                    <li>Para clientes del tipo C, el aumento será un 10% sumado al valor que tiene.</li>
+                    <li>Para cualquier otro tipo de cliente, no habrá aumento de descuento</li>
+               </ol>
+          
+               <div id="valor-compra">
+                    <label for="valor">Ingresa el valor total de su compra</label>
+                    <input id="valor" name="valor" type="number" placeholder="1000$" required>
+               </div>
+               <br>
+          </section>
+
+          <section id="tipo-discapacidad">
+
+               <label for="tipo">Ingresa el tipo de discapacidad</label>
+               <select id="tipo" name="tipo">
+                    <option value="">Seleccione una opción >> </option>
+                    <option value="A"> > TIPO A</option>
+                    <option value="B"> > TIPO B</option>
+                    <option value="C"> > TIPO C</option>
+                    <option value="Otro">> OTRO TIPO</option>
+                </select>
+          </section>
+          <br>
+          <button type="button" id="verificar">Calcular</button>
+          <div id="resultado" class="card"></div>
+     </main>
+     <script src="js/script.js"></script>
+</body>
+</html>
