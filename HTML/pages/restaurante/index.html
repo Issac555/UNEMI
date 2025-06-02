@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="css/restaurante.css">
+</head>
+<body>
+     
+     <h1>BIENVENIDO A HOTDELL - RESTAURANTE</h1>
+     <p id="welcome">Bienvenido, a continuación debes de agrerar el valor total de tu compra,
+          así mismo debe de ingresar el descuento por cliente frecuente.</p>
+
+     <main class="container">
+          <div id="precio-compra">
+               <label for="precio-valor">Ingresa el valor del consumo final de su factura<label>
+               <input type="number" id="precio-valor" name="precio-valor" required>
+          </div>
+          <div id="precio-cupo">
+               <label for="precio-cupon">Ingresa el valor de tu descuento por cliente frecuente</label>
+               <input type="number" id="precio-cupon" name="precio-cupon" required min="0" max="100">
+          </div>
+          <p id="valor-descuento"></p>
+          <p id="valor-iva"></p>
+          <p id="precio-total"></p>
+          <button id="boton-precios">Calcular</button>
+     </main>
+
+     <script src="js/restaurante.js"></script>
+</body>
+</html>
