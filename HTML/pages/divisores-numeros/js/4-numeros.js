@@ -1,3 +1,4 @@
+
 document.getElementById("boton1").addEventListener("click", function () {
 
      const numero1 = parseInt(document.getElementById("primer-digito").value);

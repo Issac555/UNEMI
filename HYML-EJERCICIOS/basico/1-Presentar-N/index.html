@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <main class="container">
+
+          <div class="mensaje">
+               <label for="n">Ingresa tu mensaje</label>
+               <input type="text" id="n" name="box-text" required>
+          </div>
+
+          <div class="contador-input">
+               <label for="c">Ingresa tu número</label>
+               <input type="number" id="c" placeholder="5" value="5">
+          </div>
+
+          <div class="button-group">
+               <div class="boton-ingresar">
+                   <button type="button" id="boton-ingresar" onclick="botoningresar()">Ingresar</button>
+               </div>
+               <div class="boton-submit">
+                   <button type="button" onclick="limpiar()">Limpiar</button>
+               </div>
+           </div>
+           <div class="resultado-respuesta" id="resultado-respuesta"></div>
+     </main>
+     <script src="js/scripts.js"></script>
+</body>
+</html>

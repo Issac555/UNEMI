@@ -25,8 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
                preciomensaje.style.color = "red"
                return;
           }
-
-          {6}
           if (precio > 70)
           {
                mensajecupon.textContent=`El valor del descuento es de ${valorcupon}$`

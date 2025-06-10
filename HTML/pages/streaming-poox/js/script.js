@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
      document.getElementById("ingreso").addEventListener("click", function () {
  
-         const compra = parseFloat(document.getElementById("compra").value.trim());
+         const compra = parseInt(document.getElementById("compra").value.trim());
          const edad = parseInt(document.getElementById("edad").value.trim());
          const tipo = document.getElementById("usuario").value;
-         const mensaje = document.getElementById("resultado");
+         let mensaje = document.querySelector("div#resultado");
  
          // Validación de campos
          if (isNaN(compra) || isNaN(edad)) {

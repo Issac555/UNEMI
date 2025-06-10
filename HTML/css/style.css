@@ -1,0 +1,60 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+     font-family: 'Segoe UI', sans-serif;
+     background-color: #f0f4f8;
+     margin: 0;
+     padding: 40px;
+     text-align: center;
+   }
+   
+   /* Título principal */
+   h1 {
+     margin-bottom: 40px;
+     color: #333;
+     background-color: #007BFF;
+     border-radius: 15px;
+   }
+   
+   /* Contenedor del menú en formato Grid */
+   .menu-grid {
+     display: grid; /* Activamos el sistema grid */
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     /* repeat(auto-fit, minmax(250px, 1fr)) crea columnas automáticas que:
+        - Miden al menos 250px
+        - Pueden crecer ocupando fracciones iguales (1fr) del espacio */
+   
+     gap: 20px; /* <-- Aquí está el gap: separa las tarjetas entre sí horizontal y verticalmente */
+   
+     max-width: 1000px; /* Límite del ancho total */
+     margin: 0 auto;    /* Centra el grid horizontalmente */
+   }
+   
+   /* Estilos para cada tarjeta del menú */
+   .menu-card {
+     background-color: #fff;     /* Fondo blanco */
+     padding: 30px;              /* Espacio interno dentro de la tarjeta */
+     border-radius: 15px;        /* Esquinas redondeadas */
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+     text-decoration: none;      /* Quita el subrayado de los enlaces */
+     color: #333;                /* Color del texto */
+     transition: transform 0.3s, box-shadow 0.3s; /* Animación suave al pasar el mouse */
+   }
+   
+   /* Efecto al pasar el mouse sobre la tarjeta */
+   .menu-card:hover {
+     transform: translateY(-5px); /* Eleva la tarjeta hacia arriba */
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+   }
+   
+   /* Estilos del título dentro de cada tarjeta */
+   .menu-card h2 {
+     margin-bottom: 10px;
+     color: #007BFF; /* Azul llamativo */
+   }
+   
+   /* Estilos del texto dentro de cada tarjeta */
+   .menu-card p {
+     color: #666;      /* Gris claro */
+     font-size: 14px;  /* Tamaño pequeño */
+   }
+   

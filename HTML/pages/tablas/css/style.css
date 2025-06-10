@@ -1,0 +1,70 @@
+/* Contenedor de resultado */
+div#resultado-tabla {
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-align: center;
+     border-radius: 12px;
+     padding: 25px;
+     margin-top: 20px;
+     background-color: #f9f9f9;
+     color: #333;
+     font-size: 18px;
+}
+
+/* Contenedor del input */
+.tabla {
+     box-shadow: 0 4px 12px rgba(180, 158, 158, 0.6);
+     padding: 20px;
+     border-radius: 12px;
+     background-color: #fff0f0;
+     margin-bottom: 20px;
+     text-align: center;
+}
+
+.tabla input {
+     padding: 10px;
+     font-size: 16px;
+     border-radius: 8px;
+     border: 1px solid #ccc;
+     width: 100px;
+     text-align: center;
+}
+
+/* Botones generales */
+button {
+     background-color: brown;
+     color: white;
+     padding: 10px 20px;
+     font-family: Arial, Helvetica, sans-serif;
+     border: none;
+     border-radius: 25px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     margin: 5px;
+}
+
+/* Efecto hover para los botones */
+button:hover {
+     background-color: #8b0000;
+}
+
+/* Contenedor de los botones */
+.button-clas {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     margin-top: 10px;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+     .button-clas {
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .tabla input {
+          width: 80%;
+     }
+}
