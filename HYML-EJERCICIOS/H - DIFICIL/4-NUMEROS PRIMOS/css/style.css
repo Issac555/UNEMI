@@ -1,0 +1,40 @@
+body {
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 35px;
+     box-shadow: 0px 0px 25px rebeccapurple;
+     margin: 15px;
+     border-radius: 15px;
+     border-bottom: 5px solid rebeccapurple;
+     background-color: #f5f5f5;
+}
+
+button {
+     margin: 15px;
+     background-color: rebeccapurple;
+     color: white;
+     padding: 10px 20px;
+     border-radius: 10px;
+     border: none;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+}
+
+button:hover {
+     background-color: #ff9800; /* Color secundario en hover */
+}
+
+a {
+     text-decoration: none;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: rebeccapurple;
+     border-radius: 10px;
+     padding: 10px;
+     display: inline-block;
+     margin: 5px 0;
+     transition: background-color 0.3s ease;
+}
+
+a:hover {
+     background-color: #ff9800; /* Color secundario al pasar el mouse */
+}

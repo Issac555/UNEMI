@@ -1,0 +1,37 @@
+body {
+     font-family: Arial, sans-serif;
+     margin: 20px;
+     padding: 15px;
+     border-radius: 15px;
+     border-bottom: 10px solid rgb(126, 55, 55);
+     box-shadow: 0px 0px 10px rgb(126, 55, 55);
+   }
+   
+   input {
+     margin: 5px;
+   }
+   
+   button{
+     margin: 10px;
+     padding: 5px;
+     color: black;
+     background-color: rgb(126, 55, 55);
+     border-radius: 8px;
+   }
+
+   a{
+     text-decoration: none;
+     color: black;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: rgb(126, 55, 55);
+     border-radius: 10px;
+     padding: 10px;
+     display: grid;
+   }
+
+   pre {
+     background-color: #f4f4f4;
+     padding: 10px;
+     border-radius: 5px;
+     white-space: pre-wrap;
+   }
