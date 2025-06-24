@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h2>Ejercicios JavaScript con entrada para todos</h2>
+
+    <!-- Ejercicio 1 -->
+    <div class="ejercicio">
+      <label for="input1">Ejercicio 1 - Número para divisores:</label>
+      <input type="number" id="input1" placeholder="Ej: 12" />
+      <button onclick="ejercicio1()">Ejecutar Ejercicio 1</button>
+    </div>
+    
+    <!-- Ejercicio 2 -->
+    <div class="ejercicio">
+      <label for="input2">Ejercicio 2 - Arreglo inicial (números separados por coma):</label>
+      <input type="text" id="input2" placeholder="Ej: 1,2" />
+      <label for="input2add">Número a agregar con push:</label>
+      <input type="number" id="input2add" placeholder="Ej: 3" />
+      <button onclick="ejercicio2()">Ejecutar Ejercicio 2</button>
+    </div>
+    
+    <!-- Ejercicio 3 -->
+    <div class="ejercicio">
+      <label for="input3a">Ejercicio 3 - Arreglo vacío, números separados por coma (ejemplo: 10,20):</label>
+      <input type="text" id="input3a" placeholder="Ej: 10,20" />
+      <button onclick="ejercicio3()">Ejecutar Ejercicio 3</button>
+    </div>
+    
+    <!-- Ejercicio 4 -->
+    <div class="ejercicio">
+      <label for="input4">Ejercicio 4 - Cadena a mostrar:</label>
+      <input type="text" id="input4" placeholder="Ej: Hola clase" />
+      <button onclick="ejercicio4()">Ejecutar Ejercicio 4</button>
+    </div>
+    
+    <!-- Ejercicio 5 -->
+    <div class="ejercicio">
+      <label for="input5">Ejercicio 5 - Palabra para contar caracteres:</label>
+      <input type="text" id="input5" placeholder="Ej: Programación" />
+      <button onclick="ejercicio5()">Ejecutar Ejercicio 5</button>
+    </div>
+    
+    <!-- Ejercicio 6 -->
+    <div class="ejercicio">
+      <label for="input6">Ejercicio 6 - Nombre para mostrar letras sin ciclos:</label>
+      <input type="text" id="input6" placeholder="Ej: Luis (4 letras mínimo)" />
+      <button onclick="ejercicio6()">Ejecutar Ejercicio 6</button>
+    </div>
+    
+    <!-- Ejercicio 7 -->
+    <div class="ejercicio">
+      <label for="input7">Ejercicio 7 - Palabra para separar letras con split:</label>
+      <input type="text" id="input7" placeholder="Ej: hola" />
+      <button onclick="ejercicio7()">Ejecutar Ejercicio 7</button>
+    </div>
+    
+    <!-- Ejercicio 8 -->
+    <div class="ejercicio">
+      <label for="input8">Ejercicio 8 - Cadena números separados por ; :</label>
+      <input type="text" id="input8" placeholder="Ej: 10;30;40;50" />
+      <button onclick="ejercicio8()">Ejecutar Ejercicio 8</button>
+    </div>
+    
+    <!-- Ejercicio 9 -->
+    <div class="ejercicio">
+      <label for="input9">Ejercicio 9 - Arreglo de frutas separado por coma:</label>
+      <input type="text" id="input9" placeholder="Ej: manzana,banana,uva" />
+      <button onclick="ejercicio9()">Ejecutar Ejercicio 9</button>
+    </div>
+    
+    <!-- Ejercicio 10 -->
+    <div class="ejercicio">
+      <label for="input10">Ejercicio 10 - Arreglo de frutas separado por coma:</label>
+      <input type="text" id="input10" placeholder="Ej: manzana,banana,uva" />
+      <button onclick="ejercicio10()">Ejecutar Ejercicio 10</button>
+    </div>
+    
+    <!-- Ejercicio 11 -->
+    <div class="ejercicio">
+      <label for="input11">Ejercicio 11 - Palabra para mostrar letras con for:</label>
+      <input type="text" id="input11" placeholder="Ej: sol" />
+      <button onclick="ejercicio11()">Ejecutar Ejercicio 11</button>
+    </div>
+    
+    <!-- Ejercicio 12 -->
+    <div class="ejercicio">
+      <label for="input12">Ejercicio 12 - Palabra para mostrar letras con while:</label>
+      <input type="text" id="input12" placeholder="Ej: sol" />
+      <button onclick="ejercicio12()">Ejecutar Ejercicio 12</button>
+    </div>
+    
+    <!-- Ejercicio 13 -->
+    <div class="ejercicio">
+      <label for="input13">Ejercicio 13 - Palabra para contar vocales:</label>
+      <input type="text" id="input13" placeholder="Ej: sol" />
+      <button onclick="ejercicio13()">Ejecutar Ejercicio 13</button>
+    </div>
+    
+    <!-- Ejercicio 14 -->
+    <div class="ejercicio">
+      <label for="input14a">Ejercicio 14 - Palabra 1:</label>
+      <input type="text" id="input14a" placeholder="Ej: casa" />
+      <label for="input14b">Ejercicio 14 - Palabra 2:</label>
+      <input type="text" id="input14b" placeholder="Ej: cosa" />
+      <button onclick="ejercicio14()">Ejecutar Ejercicio 14</button>
+    </div>
+    
+    <!-- Ejercicio 15 -->
+    <div class="ejercicio">
+      <label for="input15">Ejercicio 15 - Números separados por coma para mostrar divisores:</label>
+      <input type="text" id="input15" placeholder="Ej: 6,10" />
+      <button onclick="ejercicio15()">Ejecutar Ejercicio 15</button>
+    </div>
+    
+    <!-- Ejercicio 16 -->
+    <div class="ejercicio">
+      <label for="input16">Ejercicio 16 - Números separados por coma para sumar divisores:</label>
+      <input type="text" id="input16" placeholder="Ej: 6,10" />
+      <button onclick="ejercicio16()">Ejecutar Ejercicio 16</button>
+    </div>
+    
+    <!-- Ejercicio 17 -->
+    <div class="ejercicio">
+      <label for="input17">Ejercicio 17 - Números separados por coma para verificar perfectos:</label>
+      <input type="text" id="input17" placeholder="Ej: 6,10,28" />
+      <button onclick="ejercicio17()">Ejecutar Ejercicio 17</button>
+    </div>
+    
+    <div id="resultado"></div>
+    <script src ="js/scripts.js"></script>
+</body>
+</html>
