@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="../../css/contacto.css">
+</head>
+<body>
+     <header>
+          <h1>Sobre nosotros</h1>
+          <p>Conoce más sobre nuestro proyecto y equipo</p>
+
+     </header>
+
+     <nav>
+          <a href="../html/contacto.html" class="contacto">CONTACTENOS</a>
+          <a href="../../index.html">INICIO</a>
+          <a href="../html/sobre-nosotros.html">SOBRE NOSOTROS</a>
+          <a href="../html/ejecicios.html">EJERCICIOS</a>
+      </nav>
+     <div class="formulario-contacto">
+          <form id="formulario" title="Contacto">
+              <h2>Formulario de contacto</h2>
+      
+              <div class="form-group">
+                  <label for="nombre">Nombre completo</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+              </div>
+      
+              <div class="form-group">
+                  <label for="razon">Razón del mensaje</label>
+                  <input type="text" id="razon" name="razon" placeholder="Motivo de contacto" required>
+              </div>
+      
+              <div class="form-group">
+                  <label for="personal">Selecciona el destinatario</label>
+                  <select id="personal" name="personal" required>
+                      <option value="">-- Selecciona uno --</option>
+                      <option value="tatiana">Tatiana Castro</option>
+                      <option value="fanny">Fanny Lucero</option>
+                      <option value="neixer">Neixer Obregón</option>
+                      <option value="isaac">Isaac Castañeda</option>
+                      <option value="jorge">Jorge Cañizares</option>
+                  </select>
+              </div>
+      
+              <div class="form-group">
+                  <label for="mensaje">Mensaje (opcional)</label>
+                  <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+              </div>
+      
+              <div class="form-group">
+                  <button type="submit">Enviar</button>
+              </div>
+          </form>
+      </div>
+      
+     <footer>
+          <p>&copy; 2025 - Nuestro Proyecto</p>
+     </footer>
+</body>
+</html>

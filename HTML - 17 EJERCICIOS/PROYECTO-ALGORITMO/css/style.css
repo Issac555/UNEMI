@@ -1,0 +1,137 @@
+/* ==== RESET GENERAL ==== */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ==== ESTILO GENERAL ==== */
+body {
+  background-color: #f8f9fa; /* Fondo gris claro */
+  color: #121827;            /* Texto oscuro */
+  line-height: 1.6;
+}
+
+/* ==== ENCABEZADO ==== */
+header {
+  background-color: #121827;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== NAVEGACIÓN ==== */
+nav {
+  background-color: #123954;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out;
+}
+nav a.inicio{
+  background-color: #5298ca;
+}
+nav a:hover {
+  background-color: #125449;
+  color: #ffffff;
+}
+
+/* ==== CONTENIDO PRINCIPAL ==== */
+main {
+  max-width: 850px;          /* Máximo ancho */
+  width: 90%;                /* Adaptable */
+  margin: 0 auto;
+  padding: 30px 20px 80px;
+}
+
+/* ==== TARJETAS ==== */
+.card {
+  background-color: #ffffff;              /* Azul claro suave */
+  border-left: 6px solid #123954;         /* Acento de color */
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* ==== TÍTULOS EN TARJETAS ==== */
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #123954;
+}
+
+/* ==== PÁRRAFOS EN TARJETAS ==== */
+.card p {
+  font-size: 16px;
+  color: #222;
+  margin-top: 10px;
+}
+
+/* ==== LISTAS ==== */
+.card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.card ul li {
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  background-color: #f0e6d2;
+  border-radius: 6px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card ul li::before {
+  content: "🌐";
+  font-size: 18px;
+}
+
+/* ==== PIE DE PÁGINA ==== */
+footer {
+  background-color: #123954;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px auto;
+  }
+
+  main {
+    padding: 20px 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

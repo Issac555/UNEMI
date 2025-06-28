@@ -1,0 +1,149 @@
+   /* Resetea márgenes y paddings, define la fuente y box-sizing para todos */
+   * {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, Helvetica, sans-serif;
+     box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+ }
+
+ body {
+     background-color: #f5f7fa;
+     padding-bottom: 80px; /* Espacio para el footer fijo */
+ }
+
+/* ==== ENCABEZADO ==== */
+header {
+     background-color: #121827;
+     color: #ffffff;
+     text-align: center;
+     padding: 30px 20px;
+     font-size: 28px;
+     letter-spacing: 1px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   }
+   
+   /* ==== NAVEGACIÓN ==== */
+   nav {
+     background-color: #123954;
+     padding: 12px;
+     text-align: center;
+   }
+   
+   nav a {
+     color: #ffffff;
+     text-decoration: none;
+     margin: 0 15px;
+     font-weight: bold;
+     padding: 8px 14px;
+     border-radius: 6px;
+     transition: background-color 0.2s ease-in-out;
+   }
+   
+   nav a:hover {
+     background-color: #125449;
+     color: #ffffff;
+   }
+   
+ /* Sección de información general */
+ .card {
+     box-sizing: border-box;
+     box-shadow: 0 0 10px #123954;
+     border-bottom: 2px solid #123954;
+     padding: 35px;
+     border-radius: 15px;
+     margin: 15px;
+     background-color: rgb(255, 255, 255);
+     border-left: #123954 5px solid;
+ }
+ nav a.nosotros {
+     background-color: #5298ca; /* color distintivo */
+     color: #fafafa;            /* azul oscuro o el que uses */
+     cursor: default;
+   }
+
+ 
+ /* Contenedor principal que agrupa perfiles */
+ .container {
+     display: flex;          /* Flexbox para ordenar elementos */
+     flex-wrap: wrap;        /* Permite que los hijos bajen a la siguiente fila */
+     gap: 20px;              /* Espacio entre perfiles, filas y columnas */
+     width: 100%;            /* Ocupa todo el ancho disponible */
+     margin: 0 auto;         /* Centrado horizontal opcional */
+     justify-content: flex-start; /* Alinea elementos al inicio */
+     padding: 0 25px;
+ }
+
+ /* Cada perfil ocupa la mitad del contenedor menos espacio de gap */
+ .perfil {
+     flex: 0 0 calc(50% - 10px); /* Ancho: 50% menos la mitad del gap */
+     box-sizing: border-box;
+     /* Incluye padding y border en tamaño */
+     padding: 20px;               /* Espaciado interno */
+     box-shadow: 0 0 10px #000000; /* Sombra para relieve */
+     display: flex;               /* Flex para contenido interno */
+     align-items: center;         /* Centrar verticalmente */
+     gap: 20px;                   /* Espacio interno entre texto e imagen */
+     margin: 0px;                 /* Sin margen para controlar espacio con gap */
+     border-radius: 15px;
+     background-color: #121827;
+     border-bottom: #121827 5px solid;
+     color: white;
+ }
+ .perfil:hover{
+     box-shadow: 0 0 15px #121827; /* Sombra más intensa al pasar el mouse */
+     transition-delay: 0.1s;
+     color: black;
+     transform: translateY(-5px);
+     background-color: rgb(255, 255, 255);
+ }
+
+ /* Contenedor de texto dentro de perfil */
+ .info {
+     flex: 1;          /* Ocupa todo el espacio posible */
+     order: 1;         /* Controla el orden dentro de flexbox */
+     font-size: 16px;  /* Tamaño de fuente */
+ }
+
+ .info h3 {
+     font-size: 1.3rem;
+     margin-bottom: 10px;
+ }
+
+ /* Imagen con forma circular y sombra */
+ .foto img {
+     width: 160px;                     /* Ancho fijo */
+     height: 160px;                    /* Alto fijo */
+     border-radius: 50%;              /* Hace la imagen circular */
+     object-fit: cover;               /* Ajusta imagen sin deformar */
+     box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Sombra suave */
+     order: 2;                       /* Orden dentro de flexbox */
+ }
+
+ /* Pie de página fijo abajo */
+ footer {
+     background-color: #123954; /* Color de fondo */
+     padding: 15px;               /* Espaciado interno */
+     position: fixed;             /* Fijo abajo */
+     bottom: 0;                  /* Posición al fondo */
+     width: 100%;                /* Ocupa todo el ancho */
+     text-align: center;
+     color: #ffffff;
+     font-weight: bold;
+ }
+
+ /* Responsive design */
+ @media (max-width: 768px) {
+     .perfil {
+         flex: 0 0 100%; /* En móviles ocupa todo el ancho */
+     }
+     
+     .foto img {
+         width: 120px;
+         height: 120px;
+     }
+     
+     header h1 {
+         font-size: 2rem;
+     }
+ }
+

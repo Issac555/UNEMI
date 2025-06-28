@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizacion de iniciales</title>
+    <link rel="stylesheet" href="../css/estilo-ejercicios.css">
+
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Programación</h1>
+             <p>Práctica de conceptos básicos de programación</p>
+        </header>
+        <nav>
+             <a href="../../../html/ejecicios.html" class="ejercicio">EJERCICIOS - CADENAS</a>
+             <a href="../../../../index.html">INICIO</a>
+             <a href="../../../html/sobre-nosotros.html">SOBRE NOSOTROS</a>
+             <a href="../../../html/contacto.html">CONTACTO</a>
+        </nav>
+   
+    <div>
+        <!--Pedir un nombre completo y mostrar solo las iniciales-->
+        <form>      
+            <h1>Visualizacion de iniciales</h1>
+     
+            <div>
+                <label for="n"><strong>Ingrese un nombre completo:</strong></label>
+                <input type="text" id="n" name="n" required>
+            </div>
+
+            <div id="resultado">
+                <strong>Resultado:</strong>
+            </div>
+            
+            <div>
+                <button type="button" class="btn-primary" onclick="nombre()">
+                    <span>Mostrar</span>
+                </button>
+                <button type="reset" class="btn-secondary" onclick="limpiar()">
+                    <span>Limpiar</span>
+                </button>
+                <button type="button" class="btn-secondary" onclick="">
+                    <span>Regresar</span>
+                </button>
+            </div>            
+        </form>
+    </div>
+    <script src="./js/E5.js"></script>    
+</body>
+</html>

@@ -1,0 +1,100 @@
+   /* Resetea márgenes y paddings, define la fuente y box-sizing para todos */
+   * {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, Helvetica, sans-serif;
+     box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+ }
+
+ body {
+     background-color: #f5f7fa;
+     padding-bottom: 80px; /* Espacio para el footer fijo */
+ }
+ 
+ label {
+     display: block;
+     margin-bottom: 6px;
+     margin: 15px;
+     font-weight: bold;
+     color: #121827;
+ }
+ 
+ input, select, textarea {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 16px;
+ }
+ 
+ input:focus, select:focus, textarea:focus {
+     border-color: #123954;
+     outline: none;
+     box-shadow: 0 0 4px rgba(18, 57, 84, 0.3);
+ }
+ 
+ button {
+     background-color: #123954;
+     color: white;
+     border: none;
+     padding: 12px 20px;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+ 
+ button:hover {
+     background-color: #125449;
+ }
+ .formulario-contacto{
+     padding: 15px;
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 35px;
+     border-radius: 15px;
+     box-shadow: 0 0 15px rgb(0, 0, 0);
+ }
+/* ==== ENCABEZADO ==== */
+header {
+     background-color: #121827;
+     color: #ffffff;
+     text-align: center;
+     padding: 30px 20px;
+     font-size: 28px;
+     letter-spacing: 1px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   }
+   
+   nav a.contacto{
+     background-color: #5298ca;
+   }
+   /* ==== NAVEGACIÓN ==== */
+   nav {
+     background-color: #123954;
+     padding: 12px;
+     text-align: center;
+   }
+   
+   nav a {
+     color: #ffffff;
+     text-decoration: none;
+     margin: 0 15px;
+     font-weight: bold;
+     padding: 8px 14px;
+     border-radius: 6px;
+     transition: background-color 0.2s ease-in-out;
+   }
+   
+   nav a:hover {
+     background-color: #125449;
+     color: #ffffff;
+   }
+
+   footer{
+     background-color: #123954;
+     color: white;
+     text-align: center;
+     padding: 20px;
+     bottom: 0;
+     width: 100%;
+     position: fixed;          
+   }
