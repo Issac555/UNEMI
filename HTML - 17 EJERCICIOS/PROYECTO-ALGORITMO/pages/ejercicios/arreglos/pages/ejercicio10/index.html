@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumar dos arreglos</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Programación</h1>
+        <p>Práctica de conceptos básicos de programación</p>
+    </header>
+
+    <nav>
+        <a href="../../../../html/ejecicios.html" class="ejercicio">EJERCICIOS - ARREGLOS</a>
+        <a href="../../../../../index.html">INICIO</a>
+        <a href="../../../../html/sobre-nosotros.html">SOBRE NOSOTROS</a>
+        <a href="./../../../html/contacto.html">CONTACTO</a>
+    </nav>
+
+    <div class="contenedor-ejercicio">
+        <h2>Sumar elementos de dos arreglos</h2>
+
+        <form onsubmit="return false;">
+            <label for="entrada1">Arreglo 1:</label>
+            <input type="text" id="entrada1" placeholder="Ej: 1,2,3,4" required>
+
+            <label for="entrada2">Arreglo 2:</label>
+            <input type="text" id="entrada2" placeholder="Ej: 5,6,7,8" required>
+
+            <div class="botones">
+                <button class="btn-primary" onclick="sumarArreglos()">Sumar</button>
+                <button class="btn-secondary" onclick="limpiar()">Limpiar</button>
+            </div>
+        </form>
+
+        <p class="resultado" id="resultado"></p>
+    </div>
+
+    <script src="sumar.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* ==== RESET GENERAL ==== */
+* {
+     margin: 0; /* Elimina márgenes por defecto */
+     padding: 0; /* Elimina relleno por defecto */
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente general para toda la página */
+     box-sizing: border-box; /* Incluye el padding y borde dentro del tamaño total del elemento */
+   }
+   
+   /* ==== ESTILO GENERAL ==== */
+   body {
+     background-color: #f8f9fa; /* Color de fondo claro */
+     color: #121827; /* Color del texto principal (oscuro) */
+     line-height: 1.6; /* Espaciado entre líneas de texto */
+   }
+   
+   /* ==== ENCABEZADO (header) ==== */
+   header {
+     background-color: #121827; /* Fondo oscuro del encabezado */
+     color: #fff; /* Texto blanco */
+     text-align: center; /* Centrar el texto */
+     padding: 30px 20px; /* Espacio interno (arriba/abajo: 30px, lados: 20px) */
+     font-size: 28px; /* Tamaño de la letra */
+     letter-spacing: 1px; /* Espaciado entre letras */
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave debajo del encabezado */
+   }
+   
+   /* ==== BARRA DE NAVEGACIÓN ==== */
+   nav {
+     background-color: #123954; /* Color azul oscuro para el fondo del nav */
+     padding: 12px; /* Espaciado interno del nav */
+     text-align: center; /* Centra los enlaces horizontalmente */
+   }
+   
+   nav a {
+     color: #fff; /* Texto blanco para los enlaces */
+     text-decoration: none; /* Quita el subrayado */
+     margin: 0 15px; /* Separación horizontal entre los enlaces */
+     font-weight: bold; /* Texto en negrita */
+     padding: 8px 14px; /* Espaciado interno del enlace */
+     border-radius: 6px; /* Bordes redondeados */
+     transition: background-color 0.2s ease-in-out; /* Transición suave al cambiar color de fondo */
+   }
+   
+   nav a.ejercicio {
+     background-color: #5298ca; /* Color especial para el botón activo (ejercicio) */
+   }
+   
+   nav a:hover {
+     background-color: #125449; /* Nuevo color de fondo al pasar el mouse */
+     color: #ffffff; /* Asegura que el texto siga siendo blanco */
+   }
+   
+   /* ==== CONTENEDOR DEL MENÚ DE EJERCICIOS ==== */
+   .menu {
+     box-shadow: 0 0 15px rgba(50, 50, 93, 0.1); /* Sombra para resaltar el contenedor */
+     padding: 40px; /* Espacio interior */
+     margin: 40px auto; /* Margen superior/inferior 40px, centrado horizontal */
+     max-width: 900px; /* Ancho máximo del bloque */
+     border: 2px solid #121827; /* Borde oscuro alrededor */
+     border-radius: 15px; /* Bordes redondeados */
+     background-color: #ffffff; /* Fondo blanco para contraste */
+   }
+   
+   /* ==== TÍTULO DEL MENÚ ==== */
+   .menu h2 {
+     text-align: center; /* Centrado */
+     font-size: 26px; /* Tamaño de letra grande */
+     margin-bottom: 30px; /* Espacio debajo del título */
+     color: #123954; /* Color del texto del título */
+   }
+   
+   /* ==== LISTA DE ENLACES EN FORMATO GRID ==== */
+   .menu ul {
+     list-style: none; /* Quita los puntos de lista */
+     display: grid; /* Usa grid para acomodar los elementos */
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+     /* Crea columnas automáticas que se adapten a pantallas pequeñas */
+     gap: 20px; /* Espacio entre los botones */
+     padding: 0; /* Quita espacio por defecto */
+   }
+   
+   /* ==== ESTILO DE LOS BOTONES DE ENLACE ==== */
+   .menu a {
+     display: block; /* Hace que todo el área del enlace sea clickeable */
+     background-color: #123954; /* Fondo azul claro */
+     text-decoration: none; /* Sin subrayado */
+     color: white; /* Texto blanco */
+     padding: 15px 20px; /* Espaciado interno */
+     border-radius: 10px; /* Bordes redondeados */
+     box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Sombra para efecto de botón */
+     transition: transform 0.2s, box-shadow 0.2s; /* Transiciones suaves */
+     text-align: center; /* Centrar texto dentro del botón */
+     font-weight: bold; /* Texto en negrita */
+   }
+   
+   /* ==== EFECTO AL PASAR EL MOUSE SOBRE LOS BOTONES ==== */
+   .menu a:hover {
+     background-color: #407ba5; /* Fondo un poco más oscuro */
+     transform: translateY(-5px); /* Eleva el botón hacia arriba */
+     box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Sombra más fuerte */
+   }
+   

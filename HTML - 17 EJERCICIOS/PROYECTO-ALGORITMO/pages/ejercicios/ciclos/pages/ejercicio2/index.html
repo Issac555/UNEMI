@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabla de multiplicar</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Ejercicios de Programación</h1>
+    <p>Práctica de conceptos básicos de programación</p>
+  </header>
+
+
+  <nav>
+    <a href="../../../../html/ejecicios.html" class="ejercicio">EJERCICIOS - CICLOS</a>
+    <a href="../../../../../index.html">INICIO</a>
+    <a href="../../../../html/sobre-nosotros.html">SOBRE NOSOTROS</a>
+    <a href="../../../../html/contacto.html">CONTACTO</a>
+  </nav>
+
+  <div class="contenedor-ejercicio">
+    <h2>Ejercicio: Tabla de multiplicar</h2>
+    <form onsubmit="event.preventDefault(); mostrarTabla();">
+      <label for="numero">Ingresa un número:</label>
+      <input type="number" id="numero" name="numero" required min="0" />
+
+      <div class="botones">
+        <button type="submit" class="btn-primary">Mostrar tabla</button>
+      </div>
+    </form>
+
+    <div id="resultado" class="resultado">
+      <strong>Resultado:</strong>
+    </div>
+  </div>
+
+  <script src="Script.js" defer></script>
+
+</body>
+</html>

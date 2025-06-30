@@ -1,0 +1,182 @@
+/* ==== RESET GENERAL ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==== CUERPO ==== */
+body {
+  background-color: #f4f6f9;
+  color: #121827;
+}
+
+/* ==== ENCABEZADO ==== */
+header {
+  background-color: #121827;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ==== NAVEGACIÓN ==== */
+nav {
+  background-color: #123954;
+  padding: 14px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+nav a.ejercicio {
+  background-color: #5298ca;
+}
+
+nav a:hover {
+  background-color: #0e3d5a;
+}
+
+/* ==== CONTENEDOR GENERAL ==== */
+.contenedor-ejercicio {
+  background-color: #ffffff;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contenedor-ejercicio h1,
+.contenedor-ejercicio h2 {
+  margin-bottom: 25px;
+  color: #123954;
+}
+
+/* ==== FORMULARIO ==== */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  margin: 20px auto;
+  display: block;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* ==== BOTONES ==== */
+button, .button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* ==== GRUPO DE BOTONES ==== */
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ==== RESULTADO ==== */
+.resultado {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f4f6f9;
+  border-left: 6px solid #007bff;
+  border-radius: 10px;
+  font-size: 17px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* ==== MENÚ DE LISTA DE EJERCICIOS ==== */
+.menu {
+  background-color: #ffffff;
+  padding: 40px;
+  max-width: 750px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 25px;
+  color: #123954;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 12px 0;
+}
+
+.menu a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
