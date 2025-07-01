@@ -1,41 +1,43 @@
-let titulos = [];
-let masDe20 = 0;
-let terminaEnNumero = 0;
-let sinCondicion = 0;
+// Libros
+let libros = [];
+let muchosCaracteres = 0;
+let terminaNumero = 0;
+let sinCond = 0;
 
-function agregarTitulo() {
-  let titulo = document.getElementById("libro").value.trim();
+function agregarLibro() {
+  let entrada = document.getElementById("libro").value;
 
-  if (titulo !== "") {
-    titulos.push(titulo);
+  if (entrada !== "") {
+    libros.push(entrada);
 
-    let ultimo = titulo.charAt(titulo.length - 1);
+    let ultimo = entrada.charAt(entrada.length - 1);
 
-    if (titulo.length > 20) {
-      masDe20++;
-    } else if (!isNaN(ultimo) && ultimo !== " ") {
-      terminaEnNumero++;
+    if (entrada.length > 20) {
+      muchosCaracteres++;
+    } else if (!isNaN(ultimo)) {
+      terminaNumero++;
     } else {
-      sinCondicion++;
+      sinCond++;
     }
 
     document.getElementById("libro").value = "";
-    document.getElementById("listaLibros").textContent = titulos.join("\n");
+    document.getElementById("listaLibros").textContent = libros.join("\n");
 
     document.getElementById("resumenLibros").innerHTML =
-      "Títulos con más de 20 caracteres: " + masDe20 + "<br>" +
-      "Títulos que terminan en número: " + terminaEnNumero + "<br>" +
-      "Títulos sin condición: " + sinCondicion;
+      "Con más de 20 caracteres: " + muchosCaracteres + "<br>" +
+      "Terminan en número: " + terminaNumero + "<br>" +
+      "Sin condición: " + sinCond;
   }
 }
 
+// Productos
 let productos = [];
-let conVocal = 0;
-let conPunto = 0;
-let sinCondicion = 0;
+let iniciaVocal = 0;
+let terminaPunto = 0;
+let sinCondProd = 0;
 
 function agregarProducto() {
-  let nombre = document.getElementById("producto").value.trim();
+  let nombre = document.getElementById("producto").value;
 
   if (nombre !== "") {
     productos.push(nombre);
@@ -44,19 +46,19 @@ function agregarProducto() {
     let ultima = nombre.charAt(nombre.length - 1);
 
     if ("aeiou".includes(primera)) {
-      conVocal++;
+      iniciaVocal++;
     } else if (ultima === ".") {
-      conPunto++;
+      terminaPunto++;
     } else {
-      sinCondicion++;
+      sinCondProd++;
     }
 
     document.getElementById("producto").value = "";
     document.getElementById("lista").textContent = productos.join("\n");
 
     document.getElementById("resumen").innerHTML =
-      "Productos que inician con vocal: " + conVocal + "<br>" +
-      "Productos que terminan en punto: " + conPunto + "<br>" +
-      "Productos sin condición: " + sinCondicion;
+      "Inician con vocal: " + iniciaVocal + "<br>" +
+      "Terminan en punto: " + terminaPunto + "<br>" +
+      "Sin condición: " + sinCondProd;
   }
 }
