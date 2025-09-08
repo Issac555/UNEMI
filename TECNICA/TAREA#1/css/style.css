@@ -1,0 +1,108 @@
+/* ==== RESETEO GENERAL ==== */
+* {
+
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==== ENCABEZADO ==== */
+header {
+  background-color: #121827;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 8px 8px;
+}
+
+/* ==== INPUTS ==== */
+input {
+  margin: 10px 0;
+  width: 220px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #121827;
+  box-shadow: 0 0 6px rgba(18, 24, 39, 0.4);
+}
+
+/* ==== CONTENEDOR DE TODAS LAS CARDS ==== */
+.contenedor-tarjetas {
+  display: grid; /* usamos grid para organizar las cards en columnas/filas */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* auto-fit = se ajusta solo al espacio
+     minmax(250px, 1fr) = cada card mide mínimo 250px y máximo ocupa todo el espacio */
+  gap: 20px;     /* espacio entre las cards */
+  padding: 20px; /* espacio interno del contenedor */
+}
+
+/* ==== TARJETA INDIVIDUAL ==== */
+.card {
+  background-color: bisque; /* color de fondo */
+  padding: 20px;            /* espacio interno de la card */
+  border-radius: 8px;       /* esquinas redondeadas */
+  min-height: 160px;        /* altura mínima */
+  
+  /* Flexbox para organizar el contenido dentro de la card */
+  display: flex;
+  flex-direction: column;    /* contenido en columna */
+  justify-content: space-between; /* reparte espacio entre elementos */
+  align-items: stretch;      /* hace que los hijos usen todo el ancho */
+  
+  text-align: center;        /* centra el texto */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* sombra para efecto 3D */
+  max-width: 300px;
+  margin: 0 auto; /* centrar card en la fila si hay espacio */
+  /* animaciones suaves */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ==== INPUTS Y BOTONES ==== */
+.card input,
+.card button {
+  width: 100%;            /* ocupa todo el ancho de la card */
+  margin-top: 10px;       /* espacio superior */
+  padding: 10px;          /* espacio interno */
+  border-radius: 6px;     /* bordes redondeados */
+  border: 1px solid #ccc; /* borde gris */
+  box-sizing: border-box; /* asegura que el padding no rompa el ancho */
+}
+
+/* ==== EFECTO HOVER ==== */
+.card:hover {
+  transform: translateY(-5px); /* levanta la card un poco al pasar el mouse */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* sombra más fuerte */
+}
+.card button:hover{
+     background-color: royalblue;
+}
+/* ==== ÁREA DE RESULTADO ==== */
+.area {
+  margin-top: 10px;       /* espacio con respecto a los demás elementos */
+  width: 100%;            /* ocupa todo el ancho de la card */
+}
+
+.area textarea {
+  width: 100%;
+  height: 120px;          /* un poco más alto para ver varios resultados */
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+  outline: none;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}

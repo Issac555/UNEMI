@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>TAREA 1 – Ejercicios Condicionales, Ciclos y Arreglos</h1>
+    </header>
+
+<div class="contenedor-tarjetas">
+
+  <!-- BLOQUE A – Condicionales -->
+  <div class="card">
+    <h2>A1: Número positivo o negativo</h2>
+    <input type="number" id="a1" placeholder="Número">
+    <button onclick="resA1()">Verificar</button>
+  </div>
+  <div class="card">
+    <h2>A2: Costo de lápices</h2>
+    <input type="number" id="a2" placeholder="Cantidad de lápices">
+    <button onclick="resA2()">Calcular</button>
+  </div>
+  <div class="card">
+    <h2>A3: Descuento trajes</h2>
+    <input type="number" id="a3" placeholder="Precio del traje">
+    <button onclick="resA3()">Calcular</button>
+  </div>
+  <div class="card">
+    <h2>A4: Costo viaje por autobús</h2>
+    <input type="text" id="a4_tipo" placeholder="Tipo A/B/C">
+    <input type="number" id="a4_km" placeholder="Km">
+    <input type="number" id="a4_personas" placeholder="Personas">
+    <button onclick="resA4()">Calcular</button>
+  </div>
+  <div class="card">
+    <h2>A5: Consultorio médico</h2>
+    <input type="number" id="a5" placeholder="Número de cita">
+    <button onclick="resA5()">Calcular</button>
+  </div>
+  <div class="card">
+    <h2>A6: Fábrica El Cometa</h2>
+    <input type="number" id="a6_clave" placeholder="Clave 1-6">
+    <input type="number" id="a6_mp" placeholder="Materia prima">
+    <button onclick="resA6()">Calcular</button>
+  </div>
+  <div class="card">
+    <h2>A7: Banco XYZ</h2>
+    <input type="number" id="a7_tipo" placeholder="Tipo tarjeta 1-3">
+    <input type="number" id="a7_credito" placeholder="Crédito actual">
+    <button onclick="resA7()">Calcular</button>
+  </div>
+  <div class="card">
+    <h2>A8: Paquetería internacional</h2>
+    <input type="number" id="a8_peso" placeholder="Peso (kg)">
+    <input type="text" id="a8_zona" placeholder="Zona (América/Europa/Asia)">
+    <button onclick="resA8()">Calcular</button>
+  </div>
+  <div class="card">
+    <h2>A9: Clasificación de edades</h2>
+    <input type="number" id="a9" placeholder="Edad">
+    <button onclick="resA9()">Clasificar</button>
+  </div>
+  <div class="card">
+    <h2>A10: Día de la semana</h2>
+    <input type="number" id="a10" placeholder="Número 1-7">
+    <button onclick="resA10()">Ver día</button>
+  </div>
+
+  <!-- BLOQUE B – Ciclos -->
+  <div class="card">
+    <h2>B1: N números positivos o negativos</h2>
+    <input type="text" id="b1" placeholder="Ej: 4,-2,0,7,-9">
+    <button onclick="resB1()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>B2: N compras de lápices</h2>
+    <input type="text" id="b2" placeholder="Ej: 1200,800">
+    <button onclick="resB2()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>B3: N compras de trajes</h2>
+    <input type="text" id="b3" placeholder="Ej: 3000,2000">
+    <button onclick="resB3()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>B4: N viajes en autobús</h2>
+    <input type="text" id="b4" placeholder="Ej: A,100,15;C,50,30">
+    <button onclick="resB4()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>B5: N pacientes consultorio</h2>
+    <input type="text" id="b5" placeholder="Ej: 1,5,9">
+    <button onclick="resB5()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>B6: N artículos Fábrica El Cometa</h2>
+    <input type="text" id="b6" placeholder="Ej: 3,1000;1,2000">
+    <button onclick="resB6()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>B7: N clientes Banco XYZ</h2>
+    <input type="text" id="b7" placeholder="Ej: 2,1000;3,1500">
+    <button onclick="resB7()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>B8: N paquetes paquetería</h2>
+    <input type="text" id="b8" placeholder="Ej: 4,Europa;6,Asia">
+    <button onclick="resB8()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>B9: N personas – clasificación de edades</h2>
+    <input type="text" id="b9" placeholder="Ej: 3,15,70">
+    <button onclick="resB9()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>B10: N números – días de la semana</h2>
+    <input type="text" id="b10" placeholder="Ej: 1,3,7,9">
+    <button onclick="resB10()">Procesar</button>
+  </div>
+
+  <!-- BLOQUE C – Arreglos -->
+  <div class="card">
+    <h2>C1: Clasificación números en arreglo</h2>
+    <input type="text" id="c1" placeholder="Ej: 4,-2,0,7,-9">
+    <button onclick="resC1()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>C2: Costo pedidos lápices en arreglo</h2>
+    <input type="text" id="c2" placeholder="Ej: 1200,800">
+    <button onclick="resC2()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>C3: Precios trajes en arreglo</h2>
+    <input type="text" id="c3" placeholder="Ej: 3000,2000">
+    <button onclick="resC3()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>C4: Datos de viajes en arreglo</h2>
+    <input type="text" id="c4" placeholder="Ej: A,100,15;C,50,30">
+    <button onclick="resC4()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>C5: Citas médicas en arreglo</h2>
+    <input type="text" id="c5" placeholder="Ej: 1,5,9">
+    <button onclick="resC5()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>C6: Artículos fábrica en arreglo</h2>
+    <input type="text" id="c6" placeholder="Ej: 3,1000;1,2000">
+    <button onclick="resC6()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>C7: Clientes banco en arreglo</h2>
+    <input type="text" id="c7" placeholder="Ej: 2,1000;3,1500">
+    <button onclick="resC7()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>C8: Paquetes paquetería en arreglo</h2>
+    <input type="text" id="c8" placeholder="Ej: 4,Europa;6,Asia">
+    <button onclick="resC8()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>C9: Clasificación edades en arreglo</h2>
+    <input type="text" id="c9" placeholder="Ej: 3,15,70">
+    <button onclick="resC9()">Procesar</button>
+  </div>
+  <div class="card">
+    <h2>C10: Días de la semana en arreglo</h2>
+    <input type="text" id="c10" placeholder="Ej: 1,3,7,9">
+    <button onclick="resC10()">Procesar</button>
+  </div>
+
+</div>
+
+<div class="area">
+  <textarea id="resultadoGeneral" readonly rows="20" style="width:100%;"></textarea>
+</div>
+
+<script src="JS/script.js"></script>
+</body>
+</html>
