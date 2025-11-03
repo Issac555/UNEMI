@@ -211,90 +211,143 @@ function promedioSalariosParImpar(empleados) {
 }
 
 
-let emp1 = { nombre: "Ana", edad: 30 };
-console.log("Longitud del nombre:", longitud(emp1));
+// let emp1 = { nombre: "Ana", edad: 30 };
+// console.log("Longitud del nombre:", longitud(emp1));
 
-let producto = { nombre: "Programador", precio: 100 };
-console.log("Cantidad de 'o':", contadorVocal(producto, "o"));
+// let producto = { nombre: "Programador", precio: 100 };
+// console.log("Cantidad de 'o':", contadorVocal(producto, "o"));
 
-let persona = { nombre: "Carlos", edad: 30 };
-console.log("Nombre invertido:", reverse(persona));
+// let persona = { nombre: "Carlos", edad: 30 };
+// console.log("Nombre invertido:", reverse(persona));
 
-let empl1 = { nombre: "Ana", edad: 25 };
-let empl2 = { nombre: "Jorge", edad: 18 };
-compararLongitudes(empl1, empl2);
+// let empl1 = { nombre: "Ana", edad: 25 };
+// let empl2 = { nombre: "Jorge", edad: 18 };
+// compararLongitudes(empl1, empl2);
 
-let empleado = { cargo: "Director General Académico" };
-console.log("Iniciales del cargo:", obtenerIniciales(empleado));
+// let empleado = { cargo: "Director General Académico" };
+// console.log("Iniciales del cargo:", obtenerIniciales(empleado));
 
-let empleados4 = [
-  { nombre: "Ana", edad: 22 },
-  { nombre: "Santiago", edad: 30 },
-  { nombre: "Rosa", edad: 27 }
+// let empleados4 = [
+//   { nombre: "Ana", edad: 22 },
+//   { nombre: "Santiago", edad: 30 },
+//   { nombre: "Rosa", edad: 27 }
+// ];
+// contarCaracteres(empleados4);
+
+// let empleados6 = [
+//   { nombre: "Andrea" },
+//   { nombre: "Marcos" },
+//   { nombre: "Lucía" }
+// ];
+// contarVocalEnNombres(empleados6, "a");
+
+// let empleados7 = [
+//   { nombre: "Luis" },
+//   { nombre: "Carmen" },
+//   { nombre: "Pedro" }
+// ];
+// invertirNombres(empleados7);
+
+// let empleadosCiudad = [
+//   { nombre: "Carlos", ciudad: "Milagro" },
+//   { nombre: "Andrea", ciudad: "Guayaquil" },
+//   { nombre: "José", ciudad: "Quito" }
+// ];
+// contarCaracterCiudad(empleadosCiudad);
+
+// let empleadosCargo = [
+//   { cargo: "Director General Académico" },
+//   { cargo: "Jefe de Laboratorio" },
+//   { cargo: "Asistente Administrativo" }
+// ];
+// obtenerInicialesCargos(empleadosCargo);
+
+// let empleadosNotas = [
+//   { nombre: "Ana", nota: 65 },
+//   { nombre: "Luis", nota: 80 },
+//   { nombre: "Carla", nota: 90 },
+//   { nombre: "José", nota: 50 },
+//   { nombre: "Marta", nota: 75 }
+// ];
+// promedioMayores70(empleadosNotas);
+
+// let empleadosEdad = [
+//   { nombre: "Ana", edad: 22 },
+//   { nombre: "Luis", edad: -5 },
+//   { nombre: "Carla", edad: 0 }
+// ];
+// contarEdadesInvalidas(empleadosEdad);
+
+// let empleados3 = [
+//   { nombre: "Ana", edad: 17 },
+//   { nombre: "Luis", edad: 20 },
+//   { nombre: "Carla", edad: 35 },
+//   { nombre: "José", edad: 15 },
+//   { nombre: "Marta", edad: 18 }
+// ];
+// promedioEdades(empleados3);
+
+// let empleadoSalario = { nombre: "Luis", salario: 300 };
+// tablaSalario(empleadoSalario);
+
+// let empleadosSalarios = [
+//   { nombre: "Ana", salario: 450 },
+//   { nombre: "Luis", salario: 500 },
+//   { nombre: "Carla", salario: 625 },
+//   { nombre: "José", salario: 800 },
+//   { nombre: "Marta", salario: 705 }
+// ];
+// promedioSalariosParImpar(empleadosSalarios);
+
+
+
+
+
+
+//////
+ 
+let frases = [ 
+  { letras: "Pequeña frase", palabras: 0 },
+  { letras: "Segunda pequeña frases", palabras: 0 }
 ];
-contarCaracteres(empleados4);
 
-let empleados6 = [
-  { nombre: "Andrea" },
-  { nombre: "Marcos" },
-  { nombre: "Lucía" }
-];
-contarVocalEnNombres(empleados6, "a");
+ContarConsonantes();
 
-let empleados7 = [
-  { nombre: "Luis" },
-  { nombre: "Carmen" },
-  { nombre: "Pedro" }
-];
-invertirNombres(empleados7);
+function ContarConsonantes() {
 
-let empleadosCiudad = [
-  { nombre: "Carlos", ciudad: "Milagro" },
-  { nombre: "Andrea", ciudad: "Guayaquil" },
-  { nombre: "José", ciudad: "Quito" }
-];
-contarCaracterCiudad(empleadosCiudad);
+  for (let i = 0; i < frases.length; i++) {
+    let contenido = frases[i].letras.toLowerCase();
+    let palabras = contenido.split(" ");
+    let contadorPalabras = 0;
 
-let empleadosCargo = [
-  { cargo: "Director General Académico" },
-  { cargo: "Jefe de Laboratorio" },
-  { cargo: "Asistente Administrativo" }
-];
-obtenerInicialesCargos(empleadosCargo);
+    for (let p = 0; p < palabras.length; p++) {
+      let palabra = palabras[p];
+      let contadorConsonantes = 0;
 
-let empleadosNotas = [
-  { nombre: "Ana", nota: 65 },
-  { nombre: "Luis", nota: 80 },
-  { nombre: "Carla", nota: 90 },
-  { nombre: "José", nota: 50 },
-  { nombre: "Marta", nota: 75 }
-];
-promedioMayores70(empleadosNotas);
+      for (let j = 0; j < palabra.length; j++) {
+        let letra = palabra[j];
 
-let empleadosEdad = [
-  { nombre: "Ana", edad: 22 },
-  { nombre: "Luis", edad: -5 },
-  { nombre: "Carla", edad: 0 }
-];
-contarEdadesInvalidas(empleadosEdad);
+        // Verificamos si la letra es una consonante manualmente
+        if (
+          letra >= 'a' && letra <= 'z' && // es una letra
+          letra !== 'a' && letra !== 'e' &&
+          letra !== 'i' && letra !== 'o' &&
+          letra !== 'u'
+        ) {
+          contadorConsonantes++;
+        }
+      }
 
-let empleados3 = [
-  { nombre: "Ana", edad: 17 },
-  { nombre: "Luis", edad: 20 },
-  { nombre: "Carla", edad: 35 },
-  { nombre: "José", edad: 15 },
-  { nombre: "Marta", edad: 18 }
-];
-promedioEdades(empleados3);
+      // Si tiene 2 o menos consonantes: no se muestra y sumamos 1
+      if (contadorConsonantes <= 2) {
+        contadorPalabras++;
+      } else {
+        console.log(palabra);
+      }
+    }
 
-let empleadoSalario = { nombre: "Luis", salario: 300 };
-tablaSalario(empleadoSalario);
+    frases[i].palabras = contadorPalabras;
+  }
 
-let empleadosSalarios = [
-  { nombre: "Ana", salario: 450 },
-  { nombre: "Luis", salario: 500 },
-  { nombre: "Carla", salario: 625 },
-  { nombre: "José", salario: 800 },
-  { nombre: "Marta", salario: 705 }
-];
-promedioSalariosParImpar(empleadosSalarios);
+  console.log(frases);
+}
