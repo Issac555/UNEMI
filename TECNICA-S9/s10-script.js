@@ -60,15 +60,43 @@ class calculo {
         }
     }
 
-    invertirnumero(numero){
-        let original = numero;
-        let texto = String(numero);       
-        let invertido = "";
-        for (let i = texto.length - 1; i >= 0; i--) {
-            invertido += texto[i];        // recorre de atrás hacia adelante
+   invertirnumero(numero) {
+    let original = numero;
+    let texto = String(numero);       
+    let invertido = "";
+    let pares = 0;
+    let impares = 0;
+
+    // recorre de atrás hacia adelante
+    for (let i = texto.length - 1; i >= 0; i--) {
+        invertido += texto[i];
+        let digito = parseInt(texto[i]);
+
+        if (!isNaN(digito)) {
+            if (digito % 2 === 0) pares++;
+            else impares++;
         }
-        console.log(`\n[6] El número ${original} invertido es: ${invertido}`);
     }
+
+    // calcula porcentaje de impares
+    let total = pares + impares;
+    let porcentajeImpares;
+    if (total > 0) {
+      porcentajeImpares = (impares / total) * 100;
+    } else {
+      porcentajeImpares = 0;
+    }
+    // muestra resultados
+    console.log(`\n[6] El número ${original} invertido es: ${invertido}`);
+    console.log(`El número ${original} es ${original % 2 === 0 ? 'par' : 'impar'}`);
+    console.log(`Dígitos pares: ${pares}`);
+    console.log(`Dígitos impares: ${impares}`);
+    console.log(`Porcentaje de impares: ${porcentajeImpares.toFixed(2)}%`);
+  }
+
+
+// Ejemplo de uso:
+
 
       contarDigitos(numero){
         let original = numero;
@@ -150,12 +178,7 @@ function seriePrimo(){
 }
 seriePrimo();
 
-function serieInvertir(){
-  for (let i = 0; i < serie.length; i++){
-    operaciones.invertirnumero(serie[i].number);
-  }
-}
-serieInvertir();
+ operaciones.invertirNumero(123456789);
 
 function serieContarDigitos(){
   for (let i = 0; i < serie.length; i++){

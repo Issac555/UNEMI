@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Texto - Técnicas de Programación</title>
+     <link rel="stylesheet" href="style.css">
+    <body>
+     </head>
+
+    <div class="container">
+        <header>
+            <h1>📝 Analizador de Texto</h1>
+            <p class="subtitle">Técnicas de Programación - Procesamiento de Texto con Funciones Propias</p>
+            <p style="font-size: 0.9em; color: #999; margin-top: 10px;">Docente: Msc. Daniel Vera Paredes</p>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="section">
+                <label for="textarea">📄 Texto a Analizar:</label>
+                <textarea id="textarea" placeholder="Escriba el texto aquí..."></textarea>
+            </div>
+
+            <div class="section">
+                <label>🔍 Búsqueda de Palabra:</label>
+                <div class="input-group">
+                    <input type="text" id="searchWord" placeholder="Palabra a buscar...">
+                    <button onclick="buscarPalabra()">Buscar</button>
+                </div>
+                <div id="searchResult"></div>
+
+                <label style="margin-top: 20px;">🔤 Contar Carácter:</label>
+                <div class="input-group">
+                    <input type="text" id="charToCount" placeholder="Carácter a contar..." maxlength="1">
+                    <button onclick="contarCaracter()">Contar</button>
+                </div>
+                <div id="charResult"></div>
+
+                <label style="margin-top: 20px;">📎 Añadir Fragmento:</label>
+                <div class="input-group">
+                    <input type="text" id="fragment" placeholder="Fragmento...">
+                    <button onclick="anadirFragmento()">Aplicar</button>
+                </div>
+                <div id="fragmentResult"></div>
+            </div>
+        </div>
+
+        <div class="analysis-section">
+            <h2>📊 Análisis Completo del Texto</h2>
+            
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab(0)">Básico</button>
+                <button class="tab-btn" onclick="switchTab(1)">Puntuación</button>
+                <button class="tab-btn" onclick="switchTab(2)">Mayúsculas</button>
+                <button class="tab-btn" onclick="switchTab(3)">Posiciones</button>
+                <button class="tab-btn" onclick="switchTab(4)">Invertido</button>
+            </div>
+
+            <div id="tab0" class="tab-content active">
+                <div class="results-grid" id="basicResults"></div>
+            </div>
+
+            <div id="tab1" class="tab-content">
+                <div class="results-grid" id="punctuationResults"></div>
+            </div>
+
+            <div id="tab2" class="tab-content">
+                <div class="results-grid" id="caseResults"></div>
+            </div>
+
+            <div id="tab3" class="tab-content">
+                <div class="results-grid" id="positionResults"></div>
+            </div>
+
+            <div id="tab4" class="tab-content">
+                <div class="analysis-card">
+                    <div class="analysis-item">
+                        <span class="analysis-label">Texto Invertido:</span>
+                    </div>
+                    <div class="text-output" id="invertedText"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+         <script src="script.js"></script>
+
+    </body>
+</html>
